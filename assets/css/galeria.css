@@ -1,0 +1,86 @@
+
+/* Galeria de imagens */
+*{
+                margin: 0;
+                padding: 0;
+            }
+
+
+#gacaixa{
+    background-color: lightgrey;
+    height: 45%;
+    width: 95%;
+    
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    
+    -webkit-border-bottom-left-radius: 5%;
+    -webkit-border-bottom-right-radius: 5%;
+    -webkit-border-top-left-radius: 5%;
+    -webkit-border-top-right-radius: 5%;
+    
+    -moz-border-bottom-left-radius: 5%;
+    -moz-border-bottom-right-radius: 5%;
+    -moz-border-top-left-radius: 5%;
+    -moz-border-top-right-radius: 5%;
+    
+    box-shadow:1px 1px 3px;
+}
+
+#gabotoes{
+    height: 10%;
+    width: 80%;
+}
+
+.botao{
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a9e4f7+0,0fb4e7+99 */
+    background: #a9e4f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #a9e4f7 0%, #0fb4e7 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a9e4f7 0%,#0fb4e7 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a9e4f7 0%,#0fb4e7 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+    
+    align-content: center;
+    color: black;
+    height: 30px;
+    width: 30px;
+    margin: 1%;
+    text-align: center;
+    border-color: aqua gray gray aqua;
+    border-style: groove;
+    border-width: 1px;
+    box-shadow:1px 1px 1px aqua;
+}
+
+.botao:hover{
+    color: red;
+    border: cyan;
+    border-style: groove;
+    border-width: 1px;
+    box-shadow:1px 1px 1px lightblue;
+    cursor: pointer;
+}
+
+#galeria{
+    width: 90%;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.imagem{
+    padding: 5px;
+    width: 90%;
+    height: 80%;
+     
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imagem:hover{
+    cursor: pointer;
+}
