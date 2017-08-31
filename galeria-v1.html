@@ -8,8 +8,18 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <link rel="icon" href="icon.fav" type="icon.fav"/>
+        <link rel="stylesheet" href="assets/css/galeria.css" />
+	
+        <link rel="stylesheet" href="assets/css/lightbox.css">
+        <link rel="stylesheet" href="assets/css/lightbox.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/galeriav.js"></script>
+        
+        
+        
 	</head>
 	<body class="no-sidebar">
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -32,12 +42,8 @@
 										</ul>
 									</li>
 									<li><a class="fa fa-university" aria-hidden="true" href="patrimonio.html"><span>Património Cultural</span></a></li>
-									<li><a class="fa fa-header" aria-hidden="true" href="historia.html"><span>História</span></a></li>
-									<li><a class="fa fa-newspaper-o" aria-hidden="true"><span>Eventos</span></a>
-                                    <ul>
-											<li><a href="eventos-n1.html">Novos</a></li>
-											<li><a href="eventos-p1.html">Passados</a></li>
-										</ul></li>
+									<li><a class="fa fa-header" aria-hidden="true" href="sobre.html"><span>Sobre</span></a></li>
+                                    <li><a class="fa fa-newspaper-o" aria-hidden="true" href="eventos-n1.html"><span>Eventos</span></a></li>
 								</ul>
 							</nav>
 
@@ -52,19 +58,99 @@
 							<!-- Post -->
 								<article class="box post">
 									<header>
-										<!--<center><h2>Galeria De Videos</h2></center>-->
+										<!--<center><h2>Galeria De Fotos</h2></center>-->
                                         <span class="image featured"><img src="images/galeriavideos.png" alt="" /></span>
 									</header>
 									
 									<center><h3>Aqui podes encontrar vídeos de tudo o que fazemos!</h3></center>
-									
+                                    
+									<!-- Galeria -->
+                                    
+                                    <center>
+                                    <div id="gacaixa">
+                                        
+                                        <!-- botoes -->
+                                        
+                                        <div id="gabotoes">
+                                            <br>
+                                            <table border="0">
+                                                <tr>
+                                                    <td>
+                                                        <center><div class="botao" id="botao1" onclick="exibecategoria(1);">1</div></center>
+                                                    </td>
+                                                    <td>
+                                                        <center><div class="botao" id="botao2" onclick="exibecategoria(2);">2</div></center>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                                    
+                                                    
+                                        </div>
+                                        
+                                        <!-- imagens-->
+                                        
+                                        <div id="galeria">
+                                            <div class="grupo-videos" id="grupo1">
+                                                
+                                                <table border="0">
+                                                <tr>
+                                                    <td height="25%" width="20%">
+                                                        <center>
+                                                                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F456131191152574%2Fvideos%2F611913132163716%2F&show_text=0&width=560" width="75%" height="75%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                                        </center>
+                                                    </td>
+                                                    <td height="25%" width="20%">
+                                                        <center>
+                                                                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F456131191152574%2Fvideos%2F611913132163716%2F&show_text=0&width=560" width="75%" height="75%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                                        </center>
+                                                    </td>
+                                                    <td height="25%" width="20%">
+                                                        <center>
+                                                                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F456131191152574%2Fvideos%2F611913132163716%2F&show_text=0&width=560" width="75%" height="75%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                                        </center>
+                                                    </td>                                                   
+                                                </tr>
+                                            </table>
+                                                
+                                            </div>
+                                            
+                                            <!-- imagens2-->
+                                            
+                                            <div class="grupo-videos js-esconder" id="grupo2">
+                                                
+                                                <table border="0">
+                                                <tr>
+                                                    <td height="25%" width="20%">
+                                                        <center>
+                                                                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F456131191152574%2Fvideos%2F607573559264340%2F&show_text=0&width=560" width="75%" height="75%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                                        </center>
+                                                    </td>
+                                                    <td height="25%" width="20%">
+                                                        <center>
+                                                                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F456131191152574%2Fvideos%2F607573559264340%2F&show_text=0&width=560" width="75%" height="75%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                                        </center>
+                                                    </td>
+                                                    <td height="25%" width="20%">
+                                                        <center>
+                                                                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F456131191152574%2Fvideos%2F607573559264340%2F&show_text=0&width=560" width="75%" height="75%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                                        </center>
+                                                    </td>  
+                                                </tr>
+                                            </table>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    </center>
 								</article>
 
 						</div>
 					</div>
 				</div>
-
-			<!-- Footer -->
+            
+            <!-- Footer -->
 				<div id="footer-wrapper">
 					<div id="footer" class="container">
 						<header>
@@ -123,5 +209,6 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+            <script src="path/to/lightbox.js"></script>
 	</body>
 </html>
