@@ -68,6 +68,12 @@
     width: 90%;
 }
 
+h7{
+    color: black;
+    text-align: center;
+    font-weight: 600;    
+}
+
 ul,li{
     list-style: none;
 }

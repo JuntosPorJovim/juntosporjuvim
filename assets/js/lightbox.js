@@ -49,7 +49,7 @@
     resizeDuration: 700,
     showImageNumberLabel: true,
     wrapAround: false,
-    disableScrolling: false
+    disableScrolling: true;
   };
 
   Lightbox.prototype.option = function(options) {
